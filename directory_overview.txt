@@ -1,0 +1,48 @@
+D:\DS
+├── .git
+├── .gitignore
+├── .venv
+├── requirements.txt
+└── UVH26_Project
+    ├── src
+    │   ├── clustering.py
+    │   ├── dataset_loader.py
+    │   ├── embedding_extractor.py
+    │   ├── identical_viewpoints.py
+    │   ├── main.py
+    │   ├── review_viewpoint_pairs.py
+    │   ├── validation_pairs.py
+    │   └── __pycache__
+    ├── data
+    │   ├── raw
+    │   │   └── UVH-26
+    │   │       ├── .cache
+    │   │       ├── UVH-26-Train
+    │   │       │   ├── UVH-26-MV-Train.json
+    │   │       │   └── data
+    │   │       │       └── *.png (21,349 files)
+    │   │       └── UVH-26-Val
+    │   │           ├── UVH-26-MV-Val.json
+    │   │           └── data
+    │   │               └── *.png (5,297 files)
+    │   └── processed
+    └── outputs
+        ├── image_viewpoint_mapping.csv
+        ├── image_viewpoint_mapping_masked40_rerun.csv
+        ├── viewpoint_registry.pkl
+        ├── viewpoint_registry_masked40_rerun.pkl
+        ├── viewpoint_similarity_review.csv
+        ├── viewpoint_similarity_review_decisions.csv
+        ├── viewpoint_similarity_review_masked40_identical.csv
+        ├── viewpoint_similarity_review_masked40_identical_decisions.csv
+        └── review_previews
+            ├── current_pair.png
+            ├── pair_0001.png
+            ├── pair_0002.png
+            └── pair_0003.png
+
+Notes:
+- Raw dataset annotations:
+  - D:\DS\UVH26_Project\data\raw\UVH-26\UVH-26-Train\UVH-26-MV-Train.json
+  - D:\DS\UVH26_Project\data\raw\UVH-26\UVH-26-Val\UVH-26-MV-Val.json
+- Total image count in raw dataset: 26,646

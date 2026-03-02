@@ -1,0 +1,5 @@
+# Large dataset files are intentionally excluded from Git.
+UVH26_Project/data/raw/
+UVH26_Project/data/raw/**
+__pycache__/
+*.pyc
