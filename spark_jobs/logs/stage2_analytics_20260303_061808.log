@@ -1,0 +1,19 @@
+2026-03-03 06:18:08,727 | INFO | Starting Stage 2 analytics job
+2026-03-03 06:18:08,727 | INFO | Log path: D:\DS\spark_jobs\logs\stage2_analytics_20260303_061808.log
+2026-03-03 06:18:09,981 | INFO | Spark app id: local-1772498889624
+2026-03-03 06:18:09,981 | INFO | Spark master: local[*]
+2026-03-03 06:18:09,981 | INFO | Default parallelism: 48
+2026-03-03 06:18:10,625 | INFO | Shuffle partitions: 48
+2026-03-03 06:18:10,625 | INFO | AQE enabled: true
+2026-03-03 06:18:10,633 | INFO | Executor count: 0
+2026-03-03 06:18:16,921 | INFO | Input mapping rows: 26646
+2026-03-03 06:18:19,438 | INFO | Joined annotation rows: 316220
+2026-03-03 06:18:21,405 | INFO | Per-image metric rows: 26646
+2026-03-03 06:18:23,144 | INFO | Output viewpoint rows: 4780
+2026-03-03 06:18:24,847 | INFO | Joined partitions: 2
+2026-03-03 06:18:28,453 | INFO | Result partitions: 1
+2026-03-03 06:18:32,372 | INFO | Preview JSONL written to: D:\DS\spark_jobs\..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp.jsonl
+2026-03-03 06:18:32,377 | INFO | Preview rows: 4780
+2026-03-03 06:18:32,377 | INFO | Skip-output-write enabled; Parquet write step is skipped.
+2026-03-03 06:18:32,377 | INFO | Total execution time (s): 23.65
+2026-03-03 06:18:32,377 | INFO | Total execution time (min): 0.39
