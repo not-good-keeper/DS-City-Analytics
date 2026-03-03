@@ -3,6 +3,7 @@
 This repository contains:
 - **Stage 1**: deterministic viewpoint reconstruction from UVH-26 images.
 - **Stage 2**: Spark-based viewpoint analytics (smoke and full-scale runs).
+- **Stage 3**: interactive dashboard to explore inferred traffic statistics.
 
 ## Motivation and Problem
 - Large traffic datasets become slow and difficult to analyze with single-machine workflows.
@@ -157,13 +158,55 @@ Artifact details:
 
 ## 6) Repository policy
 - Raw UVH-26 data is not committed.
-- Runtime logs and generated Stage 2 outputs are excluded by `.gitignore`.
+
+## 7) Stage 3 Dashboard (Insights)
+Stage 3 provides an interactive dashboard over Stage 2 metrics so you can inspect inferred traffic statistics quickly.
+
+Install Stage 3 dependencies:
+
+PowerShell:
+```powershell
+& .\.venv\Scripts\Activate.ps1
+pip install -r requirements-stage3.txt
+```
+
+Bash:
+```bash
+source .venv/bin/activate
+pip install -r requirements-stage3.txt
+```
+
+Run dashboard:
+
+PowerShell:
+```powershell
+streamlit run .\stage3\dashboard_app.py
+```
+
+Bash:
+```bash
+streamlit run ./stage3/dashboard_app.py
+```
+
+Default URL: `http://localhost:8501`
+
+### Stage 3 Dashboard Screenshots
+
+Overview (KPIs + ranking + scatter):
+
+![Stage 3 Dashboard Overview](stage3_dashboard_overview.png)
+
+Table + Deep Dive view:
+
+![Stage 3 Dashboard Table and Deep Dive](stage3_dashboard_table_deepdive.png)
+
 
 ## Documentation
 - Stage 1 dev docs: `STAGE1_DEV_DOCS.md`
 - Stage 1 setup: `docs/STAGE1_SETUP.md`
 - Stage 2 dev docs: `STAGE2_DEV_DOCS.md`
 - Stage 2 setup: `docs/STAGE2_SETUP.md`
+- Stage 3 dev docs: `STAGE3_DEV_DOCS.md`
 
 ## Dataset Acknowledgment
 This project uses the **UVH-26** dataset released by **AIM @ IISc**.
