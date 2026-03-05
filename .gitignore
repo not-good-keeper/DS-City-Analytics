@@ -15,3 +15,6 @@ UVH26_Project/outputs/image_viewpoint_mapping_stage2_smoke_100img_10vp.csv
 
 # Streamlit cache
 .streamlit/
+
+spark_jobs/logs/
+docs/STAGE2_TEAM_EFFORT_REPORT.md
