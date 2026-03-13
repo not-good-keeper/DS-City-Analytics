@@ -32,6 +32,10 @@ Architecture, Distributed Processing Strategy, and Interactive Insight Layer}
 
 \maketitle
 
+\begin{center}
+\textbf{GitHub Repository: \url{https://github.com/not-good-keeper/DS-City-Analytics}}
+\end{center}
+
 \begin{abstract}
 This document provides a detailed single-column IEEE-style technical account of a distributed systems project for city traffic analytics over UVH-26. The pipeline is organized into three stages: deterministic viewpoint reconstruction, distributed Spark-based analytics, and a dashboard-based interpretation layer. The central systems contribution is a distribution-aware transformation of Stage 1 image-to-viewpoint mappings into grouped viewpoint workloads and node-bucket assignments suitable for parallel execution. Stage 2 integrates Spark DataFrame transformations, schema normalization of COCO-formatted annotations, controlled shuffles, broadcast joins, entropy-based class uncertainty scoring, and congestion synthesis through compound metrics. The resulting full artifact contains 4,780 viewpoint records derived from 26,646 mapped images and 316,220 joined annotation rows. The report emphasizes distributed execution semantics, partition behavior, computational hierarchy, metric derivation, reproducibility pathways, and code-level implementation details. A set of dataset sample images and dashboard snapshots is included to connect distributed processing outputs to real traffic-scene interpretation tasks.
 \end{abstract}
