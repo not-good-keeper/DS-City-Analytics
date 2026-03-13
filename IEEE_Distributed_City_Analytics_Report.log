@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.13)  13 MAR 2026 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.13)  13 MAR 2026 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,8 +357,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
-)
-No file IEEE_Distributed_City_Analytics_Report.aux.
+) (IEEE_Distributed_City_Analytics_Report.aux)
 \openout1 = `IEEE_Distributed_City_Analytics_Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -375,6 +374,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
+
 -- Lines per column: 58 (exact).
 
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -406,12 +406,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count326
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
  (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
 
 
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -419,7 +419,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/AD
 MIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 81
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 86
 .
 
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
@@ -429,60 +429,48 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 [2] [3]
-
-LaTeX Warning: Reference `fig:uvh26_samples' on page 4 undefined on input line 
-226.
-
-<docs/assets/report/uvh26_train_sample_a.png, id=22, 1927.2pt x 1084.05pt>
+<docs/assets/report/uvh26_train_sample_a.png, id=20, 1927.2pt x 1084.05pt>
 File: docs/assets/report/uvh26_train_sample_a.png Graphic file (type png)
 <use docs/assets/report/uvh26_train_sample_a.png>
 Package pdftex.def Info: docs/assets/report/uvh26_train_sample_a.png  used on i
-nput line 231.
+nput line 236.
 (pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
-<docs/assets/report/uvh26_train_sample_b.png, id=23, 1927.2pt x 1084.05pt>
+<docs/assets/report/uvh26_train_sample_b.png, id=21, 1927.2pt x 1084.05pt>
 File: docs/assets/report/uvh26_train_sample_b.png Graphic file (type png)
 <use docs/assets/report/uvh26_train_sample_b.png>
 Package pdftex.def Info: docs/assets/report/uvh26_train_sample_b.png  used on i
-nput line 236.
+nput line 241.
 (pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
-<docs/assets/report/uvh26_train_sample_c.png, id=24, 1927.2pt x 1084.05pt>
+<docs/assets/report/uvh26_train_sample_c.png, id=22, 1927.2pt x 1084.05pt>
 File: docs/assets/report/uvh26_train_sample_c.png Graphic file (type png)
 <use docs/assets/report/uvh26_train_sample_c.png>
 Package pdftex.def Info: docs/assets/report/uvh26_train_sample_c.png  used on i
-nput line 243.
+nput line 248.
 (pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
-<docs/assets/report/uvh26_val_sample_a.png, id=25, 1927.2pt x 1084.05pt>
+<docs/assets/report/uvh26_val_sample_a.png, id=23, 1927.2pt x 1084.05pt>
 File: docs/assets/report/uvh26_val_sample_a.png Graphic file (type png)
 <use docs/assets/report/uvh26_val_sample_a.png>
 Package pdftex.def Info: docs/assets/report/uvh26_val_sample_a.png  used on inp
-ut line 248.
+ut line 253.
 (pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
-[4 <./docs/assets/report/uvh26_train_sample_a.png (PNG copy)> <./docs/assets/re
-port/uvh26_train_sample_b.png (PNG copy)> <./docs/assets/report/uvh26_train_sam
-ple_c.png (PNG copy)> <./docs/assets/report/uvh26_val_sample_a.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:stage3_overview' on page 5 undefined on input lin
-e 319.
-
-
-LaTeX Warning: Reference `fig:stage3_deepdive' on page 5 undefined on input lin
-e 319.
-
-<stage3_dashboard_overview.png, id=30, 1153.30875pt x 508.14844pt>
+ [4] [5 <./docs/assets/report/uvh26_train_sample_a.png (PNG copy)> <./docs/asse
+ts/report/uvh26_train_sample_b.png (PNG copy)> <./docs/assets/report/uvh26_trai
+n_sample_c.png (PNG copy)> <./docs/assets/report/uvh26_val_sample_a.png (PNG co
+py)>]
+<stage3_dashboard_overview.png, id=33, 1153.30875pt x 508.14844pt>
 File: stage3_dashboard_overview.png Graphic file (type png)
 <use stage3_dashboard_overview.png>
-Package pdftex.def Info: stage3_dashboard_overview.png  used on input line 323.
+Package pdftex.def Info: stage3_dashboard_overview.png  used on input line 328.
 
 (pdftex.def)             Requested size: 490.19843pt x 215.9796pt.
-<stage3_dashboard_table_deepdive.png, id=32, 1149.5447pt x 464.4853pt>
+<stage3_dashboard_table_deepdive.png, id=35, 1149.5447pt x 464.4853pt>
 File: stage3_dashboard_table_deepdive.png Graphic file (type png)
 <use stage3_dashboard_table_deepdive.png>
 Package pdftex.def Info: stage3_dashboard_table_deepdive.png  used on input lin
-e 330.
+e 335.
 (pdftex.def)             Requested size: 490.19843pt x 198.06631pt.
-[5] [6 <./stage3_dashboard_overview.png> <./stage3_dashboard_table_deepdive.png
->]
-Underfull \hbox (badness 7576) in paragraph at lines 369--370
+ [6 <./stage3_dashboard_overview.png> <./stage3_dashboard_table_deepdive.png>]
+Underfull \hbox (badness 7576) in paragraph at lines 374--375
 []\T1/ptm/m/n/8 Apache Spark Project, ``Spark SQL, DataFrames and Datasets Guid
 e,'' 2026. [On-line]. Avail-able: $https : / / spark . apache . org / docs / la
 test /
@@ -495,17 +483,14 @@ L3 programming layer <2025-12-24>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 7774 strings out of 467871
- 123319 string characters out of 5418376
- 795986 words of memory out of 5000000
- 36579 multiletter control sequences out of 15000+600000
+ 7777 strings out of 467871
+ 123464 string characters out of 5418376
+ 864838 words of memory out of 5000000
+ 36580 multiletter control sequences out of 15000+600000
  737164 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,11n,77p,1286b,1349s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -522,7 +507,7 @@ sers/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
 /Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
 /Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Distributed_City_Analytics_Report.pdf (7 pages, 14436095
+Output written on IEEE_Distributed_City_Analytics_Report.pdf (7 pages, 14436907
  bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)

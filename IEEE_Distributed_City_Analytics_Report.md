@@ -1,7 +1,14 @@
 # Distributed Viewpoint-Level Traffic Analytics over UVH-26 Using Apache Spark: Design, Execution Pipeline, and Interactive Insight Layer
 
-**Author:** DS-City Analytics Project Team  
-**Affiliation:** Distributed Systems and Data Engineering Practice  
+**Group 8 — Case Study on Apache Spark with Application on City-Wide Analytics**
+
+| Name | Roll Number |
+|---|---|
+| **Dhrusheek Rishi Menon** | CB.SC.U4CSE23716 |
+| **Nethi Kushala Kumar** | CB.SC.U4CSE23735 |
+| **Rishinath Kurup** | CB.SC.U4CSE23741 |
+| **Yalamanchi Kushal** | CB.SC.U4CSE23766 |
+
 **Date:** March 2026
 
 **GitHub Repository: https://github.com/not-good-keeper/DS-City-Analytics**
