@@ -1,0 +1,531 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.13)  13 MAR 2026 17:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./IEEE_Distributed_City_Analytics_Report.tex
+(IEEE_Distributed_City_Analytics_Report.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen148
+\@IEEEtrantmpdimenB=\dimen149
+\@IEEEtrantmpdimenC=\dimen150
+\@IEEEtrantmpcountA=\count275
+\@IEEEtrantmpcountB=\count276
+\@IEEEtrantmpcountC=\count277
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+** ATTENTION: Single column mode is not typically used with IEEE publications.
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen151
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
+n input line 937.
+\CLASSINFOnormalsizebaselineskip=\dimen152
+\CLASSINFOnormalsizeunitybaselineskip=\dimen153
+\IEEEnormaljot=\dimen154
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen155
+\IEEEquantizedlengthdiff=\dimen156
+\IEEEquantizedtextheightdiff=\dimen157
+\IEEEilabelindentA=\dimen158
+\IEEEilabelindentB=\dimen159
+\IEEEilabelindent=\dimen160
+\IEEEelabelindent=\dimen161
+\IEEEdlabelindent=\dimen162
+\IEEElabelindent=\dimen163
+\IEEEiednormlabelsep=\dimen164
+\IEEEiedmathlabelsep=\dimen165
+\IEEEiedtopsep=\skip49
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@IEEEsubequation=\count282
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count283
+\c@table=\count284
+\@IEEEeqnnumcols=\count285
+\@IEEEeqncolcnt=\count286
+\@IEEEsubeqnnumrollback=\count287
+\@IEEEquantizeheightA=\dimen166
+\@IEEEquantizeheightB=\dimen167
+\@IEEEquantizeheightC=\dimen168
+\@IEEEquantizeprevdepth=\dimen169
+\@IEEEquantizemultiple=\count288
+\@IEEEquantizeboxA=\box53
+\@IEEEtmpitemindent=\dimen170
+\IEEEPARstartletwidth=\dimen171
+\c@IEEEbiography=\count289
+\@IEEEtranrubishbin=\box54
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip52
+For additional information on amsmath, use the `?' option.
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen174
+))
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks22
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks23
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks24
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen183
+\lightrulewidth=\dimen184
+\cmidrulewidth=\dimen185
+\belowrulesep=\dimen186
+\belowbottomsep=\dimen187
+\aboverulesep=\dimen188
+\abovetopsep=\dimen189
+\cmidrulesep=\dimen190
+\cmidrulekern=\dimen191
+\defaultaddspace=\dimen192
+\@cmidla=\count302
+\@cmidlb=\count303
+\@aboverulesep=\dimen193
+\@belowrulesep=\dimen194
+\@thisruleclass=\count304
+\@lastruleclass=\count305
+\@thisrulewidth=\dimen195
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count306
+\multirow@dima=\skip56
+\bigstrutjot=\dimen196
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.st
+y
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen197
+\captionmargin=\dimen198
+\caption@leftmargin=\dimen199
+\caption@rightmargin=\dimen256
+\caption@width=\dimen257
+\caption@indent=\dimen258
+\caption@parindent=\dimen259
+\caption@hangindent=\dimen260
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count307
+\c@continuedfloat=\count308
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count309
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count310
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count311
+\lst@gtempboxa=\box57
+\lst@token=\toks26
+\lst@length=\count312
+\lst@currlwidth=\dimen261
+\lst@column=\count313
+\lst@pos=\count314
+\lst@lostspace=\dimen262
+\lst@width=\dimen263
+\lst@newlines=\count315
+\lst@lineno=\count316
+\lst@maxwidth=\dimen264
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
+\lst@framebox=\box58
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count319
+)
+No file IEEE_Distributed_City_Analytics_Report.aux.
+\openout1 = `IEEE_Distributed_City_Analytics_Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+-- Lines per column: 58 (exact).
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count320
+\scratchdimen=\dimen265
+\scratchbox=\box59
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen266
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks28
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count326
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/AD
+MIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 81
+.
+
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+[2] [3]
+
+LaTeX Warning: Reference `fig:uvh26_samples' on page 4 undefined on input line 
+226.
+
+<docs/assets/report/uvh26_train_sample_a.png, id=22, 1927.2pt x 1084.05pt>
+File: docs/assets/report/uvh26_train_sample_a.png Graphic file (type png)
+<use docs/assets/report/uvh26_train_sample_a.png>
+Package pdftex.def Info: docs/assets/report/uvh26_train_sample_a.png  used on i
+nput line 231.
+(pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
+<docs/assets/report/uvh26_train_sample_b.png, id=23, 1927.2pt x 1084.05pt>
+File: docs/assets/report/uvh26_train_sample_b.png Graphic file (type png)
+<use docs/assets/report/uvh26_train_sample_b.png>
+Package pdftex.def Info: docs/assets/report/uvh26_train_sample_b.png  used on i
+nput line 236.
+(pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
+<docs/assets/report/uvh26_train_sample_c.png, id=24, 1927.2pt x 1084.05pt>
+File: docs/assets/report/uvh26_train_sample_c.png Graphic file (type png)
+<use docs/assets/report/uvh26_train_sample_c.png>
+Package pdftex.def Info: docs/assets/report/uvh26_train_sample_c.png  used on i
+nput line 243.
+(pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
+<docs/assets/report/uvh26_val_sample_a.png, id=25, 1927.2pt x 1084.05pt>
+File: docs/assets/report/uvh26_val_sample_a.png Graphic file (type png)
+<use docs/assets/report/uvh26_val_sample_a.png>
+Package pdftex.def Info: docs/assets/report/uvh26_val_sample_a.png  used on inp
+ut line 248.
+(pdftex.def)             Requested size: 247.6778pt x 139.3104pt.
+[4 <./docs/assets/report/uvh26_train_sample_a.png (PNG copy)> <./docs/assets/re
+port/uvh26_train_sample_b.png (PNG copy)> <./docs/assets/report/uvh26_train_sam
+ple_c.png (PNG copy)> <./docs/assets/report/uvh26_val_sample_a.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:stage3_overview' on page 5 undefined on input lin
+e 319.
+
+
+LaTeX Warning: Reference `fig:stage3_deepdive' on page 5 undefined on input lin
+e 319.
+
+<stage3_dashboard_overview.png, id=30, 1153.30875pt x 508.14844pt>
+File: stage3_dashboard_overview.png Graphic file (type png)
+<use stage3_dashboard_overview.png>
+Package pdftex.def Info: stage3_dashboard_overview.png  used on input line 323.
+
+(pdftex.def)             Requested size: 490.19843pt x 215.9796pt.
+<stage3_dashboard_table_deepdive.png, id=32, 1149.5447pt x 464.4853pt>
+File: stage3_dashboard_table_deepdive.png Graphic file (type png)
+<use stage3_dashboard_table_deepdive.png>
+Package pdftex.def Info: stage3_dashboard_table_deepdive.png  used on input lin
+e 330.
+(pdftex.def)             Requested size: 490.19843pt x 198.06631pt.
+[5] [6 <./stage3_dashboard_overview.png> <./stage3_dashboard_table_deepdive.png
+>]
+Underfull \hbox (badness 7576) in paragraph at lines 369--370
+[]\T1/ptm/m/n/8 Apache Spark Project, ``Spark SQL, DataFrames and Datasets Guid
+e,'' 2026. [On-line]. Avail-able: $https : / / spark . apache . org / docs / la
+test /
+ []
+
+[7] (IEEE_Distributed_City_Analytics_Report.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7774 strings out of 467871
+ 123319 string characters out of 5418376
+ 795986 words of memory out of 5000000
+ 36579 multiletter control sequences out of 15000+600000
+ 737164 words of font info for 155 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 67i,11n,77p,1286b,1349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmex10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ADMIN/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ADMIN/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADMIN/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/U
+sers/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on IEEE_Distributed_City_Analytics_Report.pdf (7 pages, 14436095
+ bytes).
+PDF statistics:
+ 96 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
