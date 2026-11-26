@@ -15,31 +15,59 @@ This repository contains:
 - reproducible smoke-to-full validation flow,
 - clear run evidence for distributed execution claims.
 
+## Reproduce from scratch
+
+Everything needed is this repository plus UVH-26 from Hugging Face, pinned to commit
+`59f82c57821e8a54dc40bc1f42e83909dbad0b70` (set in `UVH26_Project/src/dataset_loader.py`; annotation SHA-256s are checked on download).
+Both stages were rerun from a clean state and reproduced the committed outputs byte for byte.
+
+Prerequisites: Python 3.9 (tested 3.9.13), Java 8/11/17 for Stage 2 (tested 17). An NVIDIA GPU is recommended for Stage 1 (CPU works, slower).
+
+```bash
+git clone https://github.com/not-good-keeper/DS-City-Analytics.git
+cd DS-City-Analytics
+python -m venv .venv
+source .venv/bin/activate          # PowerShell: .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt -r requirements-stage2.txt -r requirements-stage3.txt
+
+# 1. Dataset at the pinned revision (drop --images to fetch annotations only, enough for Stage 2/3)
+python UVH26_Project/src/fetch_dataset.py --images
+
+# 2. Stage 1 from scratch into a separate folder (the committed checkpoint is already complete,
+#    so the default run id just resumes and exits)
+cd UVH26_Project && python src/main.py --run-id repro --outputs-dir outputs/repro && cd ..
+
+# 3. Stage 2 on local Spark (no Spark install needed; pip pyspark starts its own JVM)
+python spark_jobs/analytics_job.py --master "local[*]" --skip-output-write \
+  --preview-jsonl ../UVH26_Project/outputs/repro/viewpoint_analytics_full_4780vp.jsonl --preview-limit 10000
+
+# 4. Compare against the committed artifacts
+python scripts/verify_reproduction.py \
+  --stage1 UVH26_Project/outputs/repro/image_viewpoint_mapping_repro.csv \
+  --stage2 UVH26_Project/outputs/repro/viewpoint_analytics_full_4780vp.jsonl
+
+# 5. Dashboard
+streamlit run stage3/dashboard_app.py
+```
+
+For Stage 2/3 only: skip step 2, drop `--images`, and leave out `--stage1`.
+
+Notes:
+- Spark job paths resolve relative to `spark_jobs/`, hence the `../UVH26_Project/...` arguments.
+- On Windows, writing Parquet needs `winutils.exe`/`HADOOP_HOME`; `--skip-output-write` avoids it. If `SPARK_HOME` points at a missing install, unset it.
+- Stage 1 uses deterministic cuDNN and a fixed image order (train JSON order, then val).
+
 ## 1) Prerequisites
-- Python 3.9+
-- Java 11+
-- Apache Spark 3.5+
+- Python 3.9 (tested 3.9.13)
+- Java 8/11/17 (tested 17)
+- PySpark 3.5.8 (from `requirements-stage2.txt`); a standalone Spark 3.5 cluster only for distributed runs
 
 ## 2) Install
 From repo root:
 
 ```powershell
 & .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-pip install -r requirements-stage2.txt
-```
-
-## 2.1 Clone and enter repo
-PowerShell:
-```powershell
-git clone <your-fork-or-repo-url>
-cd DS-City-Analytics
-```
-
-Bash:
-```bash
-git clone <your-fork-or-repo-url>
-cd DS-City-Analytics
+pip install -r requirements.txt -r requirements-stage2.txt -r requirements-stage3.txt
 ```
 
 ## 3) Stage 1 (build mapping)
@@ -102,12 +130,12 @@ spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py -
 ### 4.3 Full run (all viewpoints)
 PowerShell:
 ```powershell
-spark-submit --master spark://<master-host>:7077 .\spark_jobs\analytics_job.py --mapping-csv ..\UVH26_Project\outputs\image_viewpoint_mapping_masked40_rerun.csv --output-dir ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp --preview-jsonl ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp_preview.jsonl --preview-limit 50
+spark-submit --master spark://<master-host>:7077 .\spark_jobs\analytics_job.py --mapping-csv ..\UVH26_Project\outputs\image_viewpoint_mapping_masked40_rerun.csv --output-dir ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp --preview-jsonl ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp.jsonl --preview-limit 10000
 ```
 
 Bash:
 ```bash
-spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py --mapping-csv ../UVH26_Project/outputs/image_viewpoint_mapping_masked40_rerun.csv --output-dir ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp --preview-jsonl ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp_preview.jsonl --preview-limit 50
+spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py --mapping-csv ../UVH26_Project/outputs/image_viewpoint_mapping_masked40_rerun.csv --output-dir ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp --preview-jsonl ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp.jsonl --preview-limit 10000
 ```
 
 For local-only validation (no cluster), use `--master local[*]`.
@@ -122,7 +150,7 @@ Capture and share:
   - `Input mapping rows`, `Joined annotation rows`, `Output viewpoint rows`
 - one preview file (`*_preview.jsonl`) for readable metric samples.
 
-In this repository, Stage 2 logs are intentionally committed for reproducibility and auditability of distributed runs.
+Stage 2 logs are written to `spark_jobs/logs/` and are not committed (see `.gitignore`); keep them locally as run evidence.
 
 ## 5.2 Committed full analytics artifact
 This repository includes the main full Stage 2 analytics output:
@@ -157,7 +185,7 @@ Artifact details:
 - `class_distribution_vector`: JSON class probability vector.
 
 ## 6) Repository policy
-- Raw UVH-26 data is not committed.
+- Raw UVH-26 data is not committed; it is fetched from Hugging Face at the pinned revision.
 
 ## 7) Stage 3 Dashboard (Insights)
 Stage 3 provides an interactive dashboard over Stage 2 metrics so you can inspect inferred traffic statistics quickly.

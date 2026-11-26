@@ -1,5 +1,7 @@
 from pathlib import Path
+import hashlib
 import json
+import os
 from typing import Dict, List, Tuple
 
 from huggingface_hub import HfApi, hf_hub_download
@@ -7,29 +9,60 @@ from huggingface_hub import HfApi, hf_hub_download
 
 DATASET_REPO_ID = "iisc-aim/UVH-26"
 
+# Exact Hugging Face commit of UVH-26 that the committed outputs were built from.
+# Pinning it keeps downloads identical even if the dataset repo is updated later.
+# Override with UVH26_REVISION only when you deliberately want a different snapshot.
+PINNED_REVISION = "59f82c57821e8a54dc40bc1f42e83909dbad0b70"
+DATASET_REVISION = os.environ.get("UVH26_REVISION", PINNED_REVISION)
+
+# SHA-256 of the annotation files at PINNED_REVISION (identical to the Hub LFS etags).
+ANNOTATION_SHA256 = {
+    "UVH-26-Train/UVH-26-MV-Train.json": "7a575d1131cd8dea32e736b1919a4e073dae328d1a7c9d4842f65bfb60c43a92",
+    "UVH-26-Val/UVH-26-MV-Val.json": "9d279f48589e653d7749b9636c945a8763b457c067f23ea79def3fa70c8e8ab4",
+}
+
+
+def sha256_of(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def download_annotations(dataset_dir: Path, verify: bool = True) -> Dict[str, Path]:
+    """Fetch the train/val COCO JSONs at the pinned revision and check their hashes."""
+    dataset_dir.mkdir(parents=True, exist_ok=True)
+    paths: Dict[str, Path] = {}
+    for rel_path, expected in ANNOTATION_SHA256.items():
+        local_path = Path(
+            hf_hub_download(
+                repo_id=DATASET_REPO_ID,
+                repo_type="dataset",
+                filename=rel_path,
+                revision=DATASET_REVISION,
+                local_dir=str(dataset_dir),
+            )
+        )
+        if not local_path.exists():
+            raise ValueError(f"Failed to download annotation file: {rel_path}")
+        if verify and DATASET_REVISION == PINNED_REVISION:
+            actual = sha256_of(local_path)
+            if actual != expected:
+                raise ValueError(
+                    f"Checksum mismatch for {rel_path}: expected {expected}, got {actual}. "
+                    "Delete the file and download it again."
+                )
+        paths[rel_path] = local_path
+    return paths
+
 
 def _download_required_jsons(dataset_dir: Path) -> Tuple[Path, Path]:
-    train_json_path = Path(
-        hf_hub_download(
-            repo_id=DATASET_REPO_ID,
-            repo_type="dataset",
-            filename="UVH-26-Train/UVH-26-MV-Train.json",
-            local_dir=str(dataset_dir),
-        )
+    paths = download_annotations(dataset_dir)
+    return (
+        paths["UVH-26-Train/UVH-26-MV-Train.json"],
+        paths["UVH-26-Val/UVH-26-MV-Val.json"],
     )
-    val_json_path = Path(
-        hf_hub_download(
-            repo_id=DATASET_REPO_ID,
-            repo_type="dataset",
-            filename="UVH-26-Val/UVH-26-MV-Val.json",
-            local_dir=str(dataset_dir),
-        )
-    )
-
-    if not train_json_path.exists() or not val_json_path.exists():
-        raise ValueError("Failed to download required annotation JSON files.")
-
-    return train_json_path, val_json_path
 
 
 def _load_json(path: Path) -> Dict:
@@ -109,7 +142,11 @@ def load_ordered_image_index(raw_data_dir: Path) -> Tuple[List[Dict], Dict[str, 
         raise ValueError("No images found in dataset index.")
 
     api = HfApi()
-    repo_files = api.list_repo_files(repo_id=DATASET_REPO_ID, repo_type="dataset")
+    repo_files = api.list_repo_files(
+        repo_id=DATASET_REPO_ID,
+        repo_type="dataset",
+        revision=DATASET_REVISION,
+    )
 
     path_lookups = {
         "train": _build_split_path_lookup(repo_files, "UVH-26-Train"),
@@ -147,6 +184,7 @@ def download_image_batch(
                 repo_id=DATASET_REPO_ID,
                 repo_type="dataset",
                 filename=rel_path,
+                revision=DATASET_REVISION,
                 local_dir=str(dataset_dir),
             )
         )

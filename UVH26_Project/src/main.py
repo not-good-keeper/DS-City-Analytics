@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 
 import numpy as np
@@ -21,21 +22,24 @@ EMBEDDING_BATCH_SIZE = 32
 RUN_ID = "masked40_rerun"
 
 
-def run_pipeline() -> None:
+def run_pipeline(run_id: str = RUN_ID, outputs_dir: Path = None) -> None:
     np.random.seed(SEED)
     torch.manual_seed(SEED)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(SEED)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
     project_root = Path(__file__).resolve().parents[1]
     data_raw_dir = project_root / "data" / "raw"
-    outputs_dir = project_root / "outputs"
+    if outputs_dir is None:
+        outputs_dir = project_root / "outputs"
 
     data_raw_dir.mkdir(parents=True, exist_ok=True)
     outputs_dir.mkdir(parents=True, exist_ok=True)
 
-    registry_path = outputs_dir / f"viewpoint_registry_{RUN_ID}.pkl"
-    mapping_path = outputs_dir / f"image_viewpoint_mapping_{RUN_ID}.csv"
+    registry_path = outputs_dir / f"viewpoint_registry_{run_id}.pkl"
+    mapping_path = outputs_dir / f"image_viewpoint_mapping_{run_id}.csv"
 
     ordered_entries, path_lookups = load_ordered_image_index(data_raw_dir)
     dataset_size = len(ordered_entries)
@@ -104,5 +108,20 @@ def run_pipeline() -> None:
         raise ValueError("total_viewpoints must be > 0.")
 
 
+def _parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Stage 1: image -> viewpoint mapping for UVH-26.")
+    parser.add_argument(
+        "--run-id",
+        default=RUN_ID,
+        help=(
+            "Checkpoint name. The default resumes the committed run, which is already complete. "
+            "Pass a new id (e.g. repro) to rebuild the mapping from scratch."
+        ),
+    )
+    parser.add_argument("--outputs-dir", type=Path, default=None, help="Where checkpoints are written.")
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    run_pipeline()
+    cli = _parse_args()
+    run_pipeline(run_id=cli.run_id, outputs_dir=cli.outputs_dir)

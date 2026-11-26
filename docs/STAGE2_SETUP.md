@@ -5,13 +5,13 @@ This page is designed for fresh clones so users can copy-paste commands and run 
 ## 0) Clone and open project
 PowerShell:
 ```powershell
-git clone <your-fork-or-repo-url>
+git clone https://github.com/not-good-keeper/DS-City-Analytics.git
 cd DS-City-Analytics
 ```
 
 Bash:
 ```bash
-git clone <your-fork-or-repo-url>
+git clone https://github.com/not-good-keeper/DS-City-Analytics.git
 cd DS-City-Analytics
 ```
 
@@ -99,12 +99,12 @@ spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py -
 ## 6) Expand to full run
 PowerShell:
 ```powershell
-spark-submit --master spark://<master-host>:7077 .\spark_jobs\analytics_job.py --mapping-csv ..\UVH26_Project\outputs\image_viewpoint_mapping_masked40_rerun.csv --output-dir ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp --preview-jsonl ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp_preview.jsonl --preview-limit 50
+spark-submit --master spark://<master-host>:7077 .\spark_jobs\analytics_job.py --mapping-csv ..\UVH26_Project\outputs\image_viewpoint_mapping_masked40_rerun.csv --output-dir ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp --preview-jsonl ..\UVH26_Project\outputs\stage2\viewpoint_analytics_full_4780vp.jsonl --preview-limit 10000
 ```
 
 Bash:
 ```bash
-spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py --mapping-csv ../UVH26_Project/outputs/image_viewpoint_mapping_masked40_rerun.csv --output-dir ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp --preview-jsonl ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp_preview.jsonl --preview-limit 50
+spark-submit --master spark://<master-host>:7077 ./spark_jobs/analytics_job.py --mapping-csv ../UVH26_Project/outputs/image_viewpoint_mapping_masked40_rerun.csv --output-dir ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp --preview-jsonl ../UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp.jsonl --preview-limit 10000
 ```
 
 Optional compute-only validation:
@@ -142,7 +142,7 @@ If logs show `Spark master: local[*]`, that run is local mode only.
 
 ## 10) Quick start block (copy-paste)
 ```powershell
-git clone <your-fork-or-repo-url>
+git clone https://github.com/not-good-keeper/DS-City-Analytics.git
 cd DS-City-Analytics
 & .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
