@@ -25,7 +25,7 @@ Required raw paths created/used by the pipeline:
 - `UVH26_Project/data/raw/UVH-26/UVH-26-Train/data/*.png`
 - `UVH26_Project/data/raw/UVH-26/UVH-26-Val/data/*.png`
 
-The loader downloads missing files when needed.
+The loader downloads missing files at the pinned dataset revision (`DATASET_REVISION` in `src/dataset_loader.py`). To prefetch everything: `python src/fetch_dataset.py --images`.
 
 Git note:
 - `UVH26_Project/data/raw/` is excluded by `.gitignore`.
@@ -49,6 +49,7 @@ Checkpoint files:
 
 Resume behavior:
 - Rerun `src/main.py` after interruption.
+- To rebuild from scratch without touching the committed checkpoint: `python src/main.py --run-id repro --outputs-dir outputs/repro`.
 - Pipeline resumes from `last_index` in registry file.
 
 ## 6. Progress Checks

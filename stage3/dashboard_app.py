@@ -8,12 +8,15 @@ import plotly.express as px
 import streamlit as st
 
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = "UVH26_Project/outputs/stage2/viewpoint_analytics_full_4780vp.jsonl"
 
 
 @st.cache_data(show_spinner=False)
 def load_analytics(path_text: str) -> pd.DataFrame:
     path = Path(path_text)
+    if not path.is_absolute():
+        path = REPO_ROOT / path
     if not path.exists():
         raise FileNotFoundError(f"Input file not found: {path}")
 
